@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#chiken {
+    width: 350px;
+    background-color: rgb(153, 153, 153);
+    position: relative;
+    border: 1px solid black;
+    padding: 1%;
+
+}
+
+#chiken2 {
+    width: 90px;
+    height: 21px;
+    background-color: rgb(213, 152, 152);
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+#beef {
+    width: 350px;
+    background-color: rgb(153, 153, 153);
+    position: relative;
+    border: 1px solid black;
+    padding: 1%;
+
+}
+
+#beef2 {
+    width: 90px;
+    height: 21px;
+    background-color: rgb(193, 69, 67);
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+#sushi {
+    width: 350px;
+    background-color: rgb(153, 153, 153);
+    position: relative;
+    border: 1px solid black;
+    padding: 1%;
+
+}
+
+#sushi2 {
+    width: 90px;
+    height: 21px;
+    background-color: rgb(229, 209, 152);
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+@media (max-width:768px) {
+    #contenedor {
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    #sushi {
+        width: 70%;
+        height: 55%;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width:767px) {
+    #contenedor {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+#chiken {
+    margin-top: 2%;
+}
+#beef{
+    margin-top: 2%;
+}
+
+    #sushi {
+        width: 350px;
+
+    }
+}
